@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-    {% block title %} titulo home ☺☻☺ {% endblock %}
+    {% block title %} 🌍 Ciudades del America {% endblock %}
    
     {% block estilo %}
         <link rel="stylesheet" href="{% static 'css/home.css' %}"/> 
@@ -10,8 +10,26 @@
     {% block cuerpo %}
         <h1> Nuestros mejores destinos </h1>
 
-        <a href="http://127.0.0.1:8000/ciudad1"> AREQUIPA </a>
-        <a href="http://127.0.0.1:8000/ciudad2"> BRASILIA </a>
-        <a href="http://127.0.0.1:8000/ciudad3"> MONTEVIDEO </a>
+        <div class="c1">
+            <a href="http://127.0.0.1:8000/ciudad1">
+                <img src="https://i.ytimg.com/vi/pAIUUxx78IA/maxresdefault.jpg" width="500" height="400">
+            </a>
+            <p><b> PAIS : AREQUIPA <br> PRECIO : $ 500 </b></p>
+        </div>
 
+
+        <div class="c2">
+            <a href="http://127.0.0.1:8000/ciudad2">
+                <img src="https://live.staticflickr.com/1464/25151589875_fe8e6eeb89_b.jpg" width="500" height="400">
+            </a>
+            <p><b> PAIS : AREQUIPA <br> PRECIO : $ 500 </b></p>
+        </div>
+
+
+        <div class="c3">
+            <a href="http://127.0.0.1:8000/ciudad3">
+                <img src="https://visitaruruguay.com/wp-content/uploads/2019/04/cartel-de-montevideo-sobre-la-rambla.jpg" width="500" height="400">
+            </a>
+            <p><b> PAIS : AREQUIPA <br> PRECIO : $ 500 </b></p>
+        </div>
     {% endblock %}
