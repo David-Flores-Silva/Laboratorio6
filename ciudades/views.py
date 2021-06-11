@@ -30,15 +30,18 @@ def paginaPrincipal(request):
 
     return render(request, "home.html", {"c1": c1, "c2": c2, "c3": c3})
 
+def about(request):
+    return render(request, "about.html", {})
+def contact(request):
+    return render(request, "contact.html", {})
+def ofertas(request):
+    return render(request, "ofertas.html", {})
+
 
 def ciudad1(request):
     return render(request, "ciudad1.html", {})
-
-
 def ciudad2(request):
     return render(request, "ciudad2.html", {})
-
-
 def ciudad3(request):
     return render(request, "ciudad3.html", {})
 
