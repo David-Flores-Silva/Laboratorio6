@@ -41,3 +41,6 @@ def ciudad2(request):
 def ciudad3(request):
     return render(request, "ciudad3.html", {})
 
+
+def reservar(request):
+    return render(request, "reservar.html", {})

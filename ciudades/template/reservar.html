@@ -1,0 +1,29 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block js %}
+        <script src="{% static 'reservar.js' %}"></script>
+{% endblock %}
+
+{% block cuerpo %}
+    <br><br>
+    <form action="." method="GET">
+        <label for="nombre"> NOMBRE: </label>
+        <input type="text" id="nombre"><br><br>
+
+        <label for="apellido"> APELLIDO: </label>
+        <input type="text" id="apellido"><br><br>
+
+        <label for="dni"> DNI: </label>
+        <input type="number" id="dni"><br><br>
+
+        <label for="tarjeta"> N° DE TARJETA: </label>
+        <input type="number" id="tarjeta"><br><br>
+
+        <label for="fecha"> FECHA DE RESERVA: </label>
+        <input type="date" id="fecha"><br><br>
+    </form>
+    <br>
+    <button type="button" onclick="cambio()"> RESERVAR </button>
+    <p id="confirmo"> cambio </p>
+{% endblock %}
