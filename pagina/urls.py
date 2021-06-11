@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ciudades.views import paginaPrincipal, ciudad1, ciudad2, ciudad3, reservar
+from ciudades.views import paginaPrincipal, ciudad1, ciudad2, ciudad3, reservar, forms
 
 
 urlpatterns = [
@@ -25,4 +25,5 @@ urlpatterns = [
     path('ciudad2/', ciudad2),
     path('ciudad3/', ciudad3),
     path('reserva/', reservar),
+    path('formulario/', forms),
 ]

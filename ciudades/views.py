@@ -2,6 +2,7 @@ from ciudades.models import Ciudad
 from django.shortcuts import render
 from django.http import request
 from .models import Ciudad
+from .forms import CiudadForm
 
 # Create your views here.
 def paginaPrincipal(request):
@@ -44,3 +45,14 @@ def ciudad3(request):
 
 def reservar(request):
     return render(request, "reservar.html", {})
+
+def forms(request):
+    form = CiudadForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        form = CiudadForm()
+
+    context = {
+        "form" : form
+        }
+    return render(request, "forms.html", context)
