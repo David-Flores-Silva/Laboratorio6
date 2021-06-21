@@ -1,37 +1,71 @@
-{% extends 'base.html' %}
 {% load static %}
 
-    {% block title %} 🌍 Ciudades del America {% endblock %}
-   
-    {% block estilo %}
-        <link rel="stylesheet" href="{% static 'css/home.css' %}"/> 
-    {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %} 🌍 Ciudades del America {% endblock %}</title>
+        
+        {% block estilo %}
+         <link rel="stylesheet" href="{% static 'css/estilo3.css' %}"/>  
+        {% endblock %}   
 
-   
-
-    {% block cuerpo %}
-        <h1> Nuestros mejores destinos </h1>
-
-        <div class="c1">
-            <a href="http://127.0.0.1:8000/ciudad1">
-                <img src="https://i.ytimg.com/vi/pAIUUxx78IA/maxresdefault.jpg" width="500" height="400">
-            </a>
-            <p><b> PAIS : {{c1.departamento}} <br> PRECIO : $ 500 </b></p>
+        {% block js %} {% endblock %}
+    </head>
+        
+    <body>
+        <div class="general">
+            <h1 id="titulo1">UNTIL THE MOON</h1>
+            <div class="enlaces">
+                <a id="una" href="http://127.0.0.1:8000/home/"> Home </a>
+                <a id="une" href="http://127.0.0.1:8000/about/"> About us </a>
+                <a id="uni" href="http://127.0.0.1:8000/contact/"> Contact </a>
+                <a id="uno" href="http://127.0.0.1:8000/ofertas/"> Ofertas </a>
+            </div>
         </div>
 
+        {% block cuerpo %}
+            <h1 id="titulo2"> Nuestros mejores destinos </h1>
 
-        <div class="c2">
-            <a href="http://127.0.0.1:8000/ciudad2">
-                <img src="https://live.staticflickr.com/1464/25151589875_fe8e6eeb89_b.jpg" width="500" height="400">
-            </a>
-            <p><b> PAIS : {{c2.departamento}} <br> PRECIO : $ {{c2.precio}} </b></p>
+            <div class="cuerpo">
+                <div class="c1">
+                    <a href="http://127.0.0.1:8000/ciudad1">
+                        <img src="https://i.ytimg.com/vi/pAIUUxx78IA/maxresdefault.jpg" width="500" height="400">
+                    </a>
+                    <p><b> PAIS : {{c1.departamento}} <br> PRECIO : $ 500 </b></p>
+                </div>
+
+
+                <div class="c2">
+                    <a href="http://127.0.0.1:8000/ciudad2">
+                        <img src="https://live.staticflickr.com/1464/25151589875_fe8e6eeb89_b.jpg" width="500" height="400">
+                    </a>
+                    <p><b> PAIS : {{c2.departamento}} <br> PRECIO : $ {{c2.precio}} </b></p>
+                </div>
+
+
+                <div class="c3">
+                    <a href="http://127.0.0.1:8000/ciudad3">
+                        <img src="https://visitaruruguay.com/wp-content/uploads/2019/04/cartel-de-montevideo-sobre-la-rambla.jpg" width="500" height="400">
+                    </a>
+                    <p><b> PAIS : {{c3.departamento}} <br> PRECIO : $ {{c3.precio}} </b></p>
+                </div>
+            </div>
+        {% endblock %}
+
+        <div class="piePagina">
+            <div class="personal">
+                <t5>UNIVERSIDAD NACIONAL DE SAN AGUSTIN</t5><br>
+                <t5>DAVID FLORES SILVA</t5><br>
+                <t5>CORREO: dfloressi@unsa.edu.pe</t5><br>
+                <t5>celular: 967114271</t5>
+            </div>
+
+            <div class="empresarial">
+                <t5>Until the moon</t5><br>
+                <t5>CORREO: theMoon@gmail.com</t5><br>
+                <t5>celular: 967114271</t5>
+            </div>
         </div>
-
-
-        <div class="c3">
-            <a href="http://127.0.0.1:8000/ciudad3">
-                <img src="https://visitaruruguay.com/wp-content/uploads/2019/04/cartel-de-montevideo-sobre-la-rambla.jpg" width="500" height="400">
-            </a>
-            <p><b> PAIS : {{c3.departamento}} <br> PRECIO : $ {{c3.precio}} </b></p>
-        </div>
-    {% endblock %}
+    </body>
+</html>

@@ -1,4 +1,11 @@
 {% extends 'home.html' %}
+
+{% load static %}
+{% block estilo %}
+    <link rel="stylesheet" href="{% static 'css/ciudad.css' %}"/>  
+{% endblock %} 
+
+
 {% block title %} 🌇 MONTEVIDEO 🌇 {% endblock %}
 
     {% block cuerpo %} 
@@ -10,13 +17,14 @@
         
         <h3><b> INFORMACIÓN </b></h3>
         
-            <ul>NOMBRE: </ul>
-            <ul>PAIS: </ul>
-            <ul>DEPARTAMENTO: </ul>
-            <ul>DESCRIPCIÓN: </ul>
-            <ul>PRECIO: </ul>
+            <ul>NOMBRE:         Montevideo </ul>
+            <ul>PAIS:           Uruguay </ul>
+            <ul>DEPARTAMENTO:   Montevideo</ul>
+            <ul>DESCRIPCIÓN: La capital de Uruguay, un pais pequeño pero con mucha cultura</ul>
+            <ul>PRECIO: $500</ul>
         
         <br><br><br>
         <a href="http://127.0.0.1:8000/reserva"> RESERVAR VISITA </a>
-
+        <br><br><br><br><br><br><br>
+        <p>sda</p>
     {% endblock %}

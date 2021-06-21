@@ -1,0 +1,81 @@
+.general {
+    background-color:#00d2ff;
+    border: 5px solid red;
+    margin: 0%;
+    padding: 12px;
+}
+#titulo1{
+    text-align: center;
+    font-family: serif;
+    text-shadow: 5px 5px 5px black;
+    font-size: 50px;
+    color: rgb(255, 30, 0);
+}
+.enlaces #una, #une, #uni, #uno {
+    background-color: #46c3db;
+    color:black;
+    border: 3px solid #0fa1be;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+.piePagina{
+    width: 98%;
+    height: 80px;
+    background-color: #00d2ff;
+    bottom: 0%;
+    position: fixed;
+
+    border: 5px solid red;
+    margin: 0%;
+    padding: 5px;
+}
+.personal{
+    float: left;
+}
+.empresarial{
+    float: right;
+}
+body{
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9dced6, #32b6ca), url("body.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a3dae4, #228d9e), url("body.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+
+
+
+label{
+    color: red;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+input{
+    width: 130px;
+    background-color: antiquewhite;
+    transition: width 0.4s ease-in-out;
+}
+input:focus{
+    width: 260px;
+}
+p{
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+button{
+    background-color: antiquewhite;
+    border: 5px solid black;
+    padding: 5px;
+    text-decoration: none;
+    color:black;
+    margin-left: 5%;
+}
+button:hover{
+    background-color: black;
+    border: 5px solid white;
+    color:white;
+    padding: 5px;
+}

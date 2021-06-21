@@ -1,6 +1,10 @@
 {% extends 'home.html' %}
 {% load static %}
 
+{% block estilo %}
+    <link rel="stylesheet" href="{% static 'css/reserva.css' %}"/>  
+{% endblock %}
+
 {% block js %}
         <script src="{% static 'reservar.js' %}"></script>
 {% endblock %}
@@ -11,7 +15,7 @@
         <label for="nombre"> NOMBRE: </label>
         <input type="text" id="nombre"><br><br>
 
-        <label for="apellido"> APELLIDO: </label>
+        <label for="apellido"> APELLIDO: </label>  
         <input type="text" id="apellido"><br><br>
 
         <label for="dni"> DNI: </label>
@@ -22,8 +26,8 @@
 
         <label for="fecha"> FECHA DE RESERVA: </label>
         <input type="date" id="fecha"><br><br>
-    </form>
-    <br>
+    </form><br>
+
     <button type="button" onclick="cambio()"> RESERVAR </button>
-    <p id="confirmo"> cambio </p>
+    <p id="confirmo">  </p>
 {% endblock %}

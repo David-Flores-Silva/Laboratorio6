@@ -1,7 +1,16 @@
-{% extends "base.html" %}
+{% extends "home.html" %}
+{% load static %}
+
+
+{% block estilo %}
+    <link rel="stylesheet" href="{% static 'css/enlace2.css' %}"/>  
+{% endblock %}   
+
+
 
 {% block cuerpo %}
-    <h1> ¿quienes somos? </h1>
+    
+    <h4>¿quienes somos? </h4>
     <p>
         Descubre las mejores ofertas en vuelos baratos junto a Despegar, la agencia
         de viajes online más importante de América Latina, con la mayor variedad de
@@ -21,7 +30,7 @@
         baratos hacia tu próximo destino te esperan en Despegar. ¡Haz ya mismo tu 
         reserva y disfruta de la forma más fácil de viajar!
     </p>
-
+    
     <h4>¿POR QUE SELECCIONAR UN SITIO?</h4>
     <p>
         En Despegar puedes comprar tus pasajes aéreos al mejor precio y con la mejor
@@ -30,7 +39,7 @@
         y destinos para que elijas el que más te conviene. Encuentra los mejores 
         vuelos y ¡prepárate para viajar!
     </p>
-
+   
     <h4>¿QUE DEBES DE EQUIPAR?</h4>
     <p>
         Algunas aerolíneas ofrecen tarifas de pasajes de avión muy bajas, pero que 
@@ -39,7 +48,7 @@
         Recuerda que en Despegar te brindamos diferentes opciones de servicios para 
         que tengas una excelente experiencia de vuelo.
     </p>
-
+    
     <h4>TIPS PARA SELECCIONAR UN SITIO</h4>
     <p>
         Cuando busques tus pasajes aéreos, ten en cuenta el aeropuerto del cual sale 
@@ -48,5 +57,6 @@
         equipaje. Si tu vuelo tiene escalas, chequea si implica un cambio de aeropuerto.
     </p>
 
-    
+    <br><br><br><br><br><br><br>
+    <p>sda</p>
 {% endblock %}

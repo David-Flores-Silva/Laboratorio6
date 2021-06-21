@@ -1,4 +1,11 @@
 {% extends 'home.html' %}
+
+{% load static %}
+{% block estilo %}
+    <link rel="stylesheet" href="{% static 'css/ciudad.css' %}"/>  
+{% endblock %}   
+
+
 {% block title %} 🌋 AREQUIPA 🌋 {% endblock %}
 
     {% block cuerpo %} 
@@ -10,13 +17,14 @@
         
         <h3><b> INFORMACIÓN </b></h3>
         
-            <ul>NOMBRE: </ul>
-            <ul>PAIS: </ul>
-            <ul>DEPARTAMENTO: </ul>
-            <ul>DESCRIPCIÓN: </ul>
-            <ul>PRECIO: </ul>
+            <ul>NOMBRE: Ciudad blanca</ul>
+            <ul>PAIS: Peru </ul>
+            <ul>DEPARTAMENTO: Arequipa</ul>
+            <ul>DESCRIPCIÓN: La segunda region más importante del Peru con hermosos paisajes que no te puedes perder</ul>
+            <ul>PRECIO: $ 500</ul>
         
         <br><br><br>
         <a href="http://127.0.0.1:8000/reserva"> RESERVAR VISITA </a>
-
+        <br><br><br><br><br><br><br>
+        <p>sda</p>
     {% endblock %}

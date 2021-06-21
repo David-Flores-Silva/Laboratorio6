@@ -1,0 +1,89 @@
+.general{
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3aa4d5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #46b2e4, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: 5px solid red;
+    margin: 0%;
+    padding: 12px;
+}
+
+#titulo1{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 5px 5px 5px black;
+    font-size: 50px;
+    color: rgb(255, 30, 0);
+}
+
+.enlaces #una, #une, #uni, #uno {
+    background-color: #46c3db;
+    color:black;
+    border: 3px solid #0fa1be;
+    border-radius: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+body{
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF), url("body.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF), url("body.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: "body.jpg";
+}
+
+#titulo2{
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cuerpo{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.c1{
+    float: left;
+    text-align: center;
+    border: 5px solid;
+    padding: 20px;
+}
+
+.c2{
+    float: left;
+    text-align: center;
+    border: 5px solid ;
+    padding: 20px;
+}
+
+.c3{
+    float: left;
+    text-align: center;
+    border: 5px solid ;
+    padding: 20px;
+}
+
+
+.piePagina{
+    width: 98%;
+    height: 80px;
+    background-color: #00d2ff;
+    bottom: 0%;
+    position: fixed;
+
+    border: 5px solid red;
+    margin: 0%;
+    padding: 5px;
+}
+
+.personal{
+    float: left;
+}
+
+.empresarial{
+    float: right;
+}
